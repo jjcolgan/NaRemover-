@@ -17,7 +17,7 @@ ASVs = []
 for line in lines:
     words = line.split("\t")
     if words[1] != "NA":
-            output.write(line +'\n')
+            output.write(line )
             ASVs.append(words[0])             
 output.close()
 #reading in ASV table, if line starts with an asv from the list, do not write it to output.
